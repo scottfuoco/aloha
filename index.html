@@ -3,53 +3,56 @@
 
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Aloha Apparel Co.</title>
 
 	<link rel="stylesheet" href="reset.css" />
 	<link rel="stylesheet" href="fonts.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-	<!-- Aloha text and basket at the top of the page -->
+
 	<header class="container clearfix">
-		<div class="alohaLogo">
-			<img src="./assets/images/aloha-logo.svg" />
+		<div class="alohaLogoContainer">
+			<div class="alohaLogo">
+				<img src="./assets/images/aloha-logo.svg" />
+			</div>
 		</div>
+
 		<div class="cartIconContainer">
 			<div class="cartIcon">
-				<a><img src="./assets/images/cart-icon.svg" /></a>
+				<a href="#"><img src="./assets/images/cart-icon.svg" /></a>
 			</div>
 		</div>
 	</header>
 
 
-
-	<!-- banner section -->
 	<section class="banner">
 		<div class="banner-text fontPlayfairDisplay">
-			<p>New Collection</p>
-			<h2>Spring/Summer 2016</h2>
+			<p><em>NEW COLLECTION</em></p>
+			<h1>Spring/Summer 2016</h1>
 		</div>
 	</section>
 
-	<!-- Hand-Crafted Styles Description Section -->
 	<section class="descriptionSection container">
-		<h2><i>Hand-Crafted</i> <em>Styles</em></h2>
-		<p>Aloha Apparel Co. sells only the finest read-to-travel clothing. Browse our current selection of products or sign-up for
-			updates below.</p>
+		<div class="verticallyCenter">
+			<h2><i>Hand-Crafted</i> <em>Styles</em></h2>
+			<p>Aloha Apparel Co. sells only the finest read-to-travel clothing. Browse our current selection of products or sign-up for
+				updates below.</p>
+		</div>
 	</section>
 
 	<div class="hr"></div>
 
-	<!-- Most Loved Products Section -->
-	<section class="productSection">
-		<div class="container clearfix">
+	<section class="productSection container">
+		<div class="verticallyCenter clearfix">
 			<h2><i>Most-Loved</i> <em>Products</em></h2>
 			<ul>
 				<li class="productList">
-					<a href="#"><img src="./assets/images/stretch-knit-dress.jpg" /></a>
+					<div class="productImage">
+						<a href="#"><img src="./assets/images/stretch-knit-dress.jpg" /></a>
+					</div>
 					<ul class="productDescription">
 						<li class="productType">Dresses</li>
 						<li class="productName">Stretch Knit Dress</li>
@@ -57,7 +60,9 @@
 					</ul>
 				</li>
 				<li class="productList">
-					<a href="#"><img src="./assets/images/cotton-blue-shirt.jpg" /></a>
+					<div class="productImage">
+						<a href="#"><img src="./assets/images/cotton-blue-shirt.jpg" /></a>
+					</div>
 					<ul class="productDescription">
 						<li class="productType">Shirts</li>
 						<li class="productName">Cotton Blue Shirt</li>
@@ -65,7 +70,9 @@
 					</ul>
 				</li>
 				<li class="productList">
-					<a href="#"><img src="./assets/images/checked-stretch-dress.jpg" /></a>
+					<div class="productImage">
+						<a href="#"><img src="./assets/images/checked-stretch-dress.jpg" /></a>
+					</div>
 					<ul class="productDescription">
 						<li class="productType">Dresses</li>
 						<li class="productName">Checked Stretch Dress</li>
@@ -73,7 +80,9 @@
 					</ul>
 				</li>
 				<li class="productList">
-					<a href="#"><img src="./assets/images/blue-hipster-backpack.jpg" /></a>
+					<div class="productImage">
+						<a href="#"><img src="./assets/images/blue-hipster-backpack.jpg" /></a>
+					</div>
 					<ul class="productDescription">
 						<li class="productType">Bags</li>
 						<li class="productName">Blue Hipster Backpacks</li>
@@ -85,55 +94,75 @@
 	</section>
 
 	<section class="updatesSection container">
-		<p><i>Sign-up for</i> <em>Updates</em></p>
-		<p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our
-			blog. Unsubscribe at any time.</p>
-		<form action="#" method="POST">
-			<div class="subscribeContainer">
-				<div class="subscribeSubmitTextInputContainer">
-					<input type="text" class="subscribeTextInput" placeholder="Your Email" />
-				</div>
-				<div class="subscribeSubmitBtnContainer">
-					<input type="submit" class="subscribeSubmitBtn" value="Subscribe" />
-				</div>
+		<div class="updatesSectionContainer">
+			<div class="updatesSectionTextContainer">
+				<h2><i>Sign-up for</i> <em>Updates</em></h2>
+				<p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from
+					our blog. Unsubscribe at any time.</p>
 			</div>
-		</form>
+			<form action="#" method="POST">
+				<div class="subscribeContainer">
+					<div class="subscribeSubmitTextInputContainer">
+						<input type="email" placeholder="Your Email" />
+					</div>
+					<div class="subscribeSubmitBtnContainer">
+						<input type="submit" value="Subscribe" />
+					</div>
+				</div>
+			</form>
+		</div>
 	</section>
 
 	<footer class="container clearfix">
-		<div class="footerLeft">
-			<p>&copy;2016 Aloha Apparel Co.</p>
-			<p>Powered by HTML and CSS.</p>
-			<p></p>
-			<p>604-604-6040. info@alohaapparel.com</p>
-			<p></p>
-			<p>1490 W Broadway</p>
-			<p>Vancouver, BC, Canada</p>
+		<div class="footerInfo verticallyCenter">
+			<ul>
+				<li class="copywriteText">
+					<p>&copy;2016 Aloha Apparel Co.</p>
+					<p>Powered by HTML and CSS.</p>
+				</li>
+				<li class="phoneAndEmailText">
+					<p>604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
+				</li>
+				<li class="addressText">
+					<address>
+						1490 W Broadway<br /> Vancouver, BC, Canada
+					</address>
+				</li>
+			</ul>
 		</div>
 
-		<div class="socialMediaList">
-
+		<div class="socialMediaList verticallyCenter">
 			<ul>
-				<li>
-					<i class="fa fa-facebook icon"></i>
-					<a href="www.facebook.com">Facebook</a>
-				</li>
-				<li>
-					<i class="fa fa-twitter icon"></i>
-					<a href="www.twitter.com">Twitter</a>
-				</li>
-				<li>
-					<i class="fa fa-instagram icon"></i>
-					<a href="www.instagram.com">Instagram</a>
-				</li>
-				<li>
-					<i class="fa fa-pinterest icon"></i>
-					<a href="www.pinterest.com">Pinterest</a>
-				</li>
-				<li>
-					<i class="fa fa-google-plus icon"></i>
-					<a href="googleplus.com">Google+</a>
-				</li>
+				<a href="www.facebook.com">
+					<li>
+						<i class="fa fa-facebook icon"></i>
+						<span>Facebook</span>
+					</li>
+				</a>
+				<a href="www.twitter.com">
+					<li>
+						<i class="fa fa-twitter icon" aria-hidden="true"></i>
+						<span>Twitter</span>
+					</li>
+				</a>
+				<a href="www.instagram.com">
+					<li>
+						<i class="fa fa-instagram icon" aria-hidden="true"></i>
+						<span>Instagram</span>
+					</li>
+				</a>
+				<a href="www.pinterest.com">
+					<li>
+						<i class="fa fa-pinterest icon" aria-hidden="true"></i>
+						<span>Pinterest</span>
+					</li>
+				</a>
+				<a href="googleplus.com">
+					<li>
+						<i class="fa fa-google-plus icon" aria-hidden="true"></i>
+						<span>Google+</span>
+					</li>
+				</a>
 			</ul>
 		</div>
 	</footer>

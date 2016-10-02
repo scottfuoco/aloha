@@ -1,0 +1,348 @@
+/* ------ Colors ------ */
+/*
+body font #2d2d2d
+light grey #969696
+orange brand #e2574c
+link hover #b64036
+light grey border #d7d7d7
+dark grey background #242424
+*/
+
+/* ------ Globals ------ */
+html {
+	font-size: 14px;
+}
+
+body {
+	font-family: Raleway;
+	font-weight: normal;
+	color: #2d2d2d;
+	background: #FFFFFF;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+i {
+	font-style: italic;
+}
+
+em {
+	font-weight: bold;
+}
+
+a:hover {
+	color: #b64036;
+}
+
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: Playfair Display;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+.container {
+	padding: 0 2%;
+	margin: auto;
+	max-width: 1240px;
+	width: 100%;
+}
+
+.verticallyCenter {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* ------ Header ------ */
+header {
+	position: relative;
+	height: 100px;
+}
+
+.cartIconContainer{
+	float: right;
+	margin-right: 75px;
+}
+.cartIcon {
+	width: 50px;
+		position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.alohaLogoContainer{
+	float: left;
+	padding-left: 25px;
+}
+
+.alohaLogo {
+	width: 150px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.hr {
+	border-top: 1px solid #d7d7d7;
+}
+
+/* ------ Banner Section ------ */
+.banner {
+	background: linear-gradient(to bottom,rgba(0,0,0, 0.25) 0%, rgba(0,0,0, 0.25) 100%),
+				url("./assets/images/banner-girl.png") no-repeat center 126px,
+				url("./assets/images/flower-bkgd.jpg") repeat-x center top;
+	background-size: cover, contain, contain;
+	height: 620px;
+	color: #FFFFFF;
+}
+
+.banner-text {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.banner h2{
+	font-family: Playfair Display;
+	font-style: normal;
+}
+
+.banner p {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	padding-bottom: 30px;
+}
+
+/* ------ Description Section ------ */
+.descriptionSection {
+	height: 200px;
+	text-align: center;
+}
+
+.descriptionSection>div {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.descriptionSection h2 {
+	margin-bottom: 20px;
+}
+
+.descriptionSection p {
+	line-height: 2rem;
+}
+
+/* ------ Product Section ------ */
+.productSection {
+	height: 500px;
+}
+.productSection .productImage {
+	width: 240px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+.productSection .productList { 
+	float: left;
+	width: 25%;
+}
+
+.productSection h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.productSection li {
+	color: #969696;
+	font-weight: bold;
+	font-size: .75rem;
+}
+
+.productSection .productName {
+	color: #e2574c;
+	text-transform: capitalize;
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+
+.productSection .productType {
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.productSection .productDescription {
+	text-align: center;
+}
+
+/* ------ Updates Section ------ */
+.updatesSection {
+	background: linear-gradient(to bottom,rgba(0,0,0, 0.25) 0%, rgba(0,0,0, 0.25) 100%),
+				url("./assets/images/wave-bkgd.jpg") no-repeat center bottom;
+	color: #FFFFFF;
+	text-align: center;
+	height: 300px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.updatesSectionContainer {
+	width: 600px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.subscribeContainer {
+	background-color: #FFFFFF;
+	margin: 0 auto;
+	border-radius: 24px;
+	height: 48px;
+	width: 400px;
+	position: relative;
+	display: inline-block;
+}
+
+.updatesSectionTextContainer {
+	font-weight: bold;
+}
+
+.updatesSectionContainer h2 {
+	padding-bottom: 30px;
+}
+
+.updatesSectionContainer p {
+	line-height: 2rem;
+	padding-bottom: 30px;
+}
+
+.subscribeSubmitTextInputContainer{
+	float: left;
+	margin-left: 20px;
+}
+
+.subscribeTextInput:focus{
+	border: none;
+}
+
+.subscribeContainer input[type="email"] {
+	border: 0;
+	outline: none;
+	font-size: 1.1rem;
+	color: #2d2d2d;
+	width: 250px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.subscribeSubmitBtnContainer {
+	float: right;
+	margin-right: 109px;
+}
+
+.subscribeContainer input[type="submit"] {
+	background-color: #e2574c;
+	font-size:1rem;
+	width: 105px;
+	border-radius: 18px;
+	color: white;
+	border: 0;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.subscribeContainer input[type="submit"]:hover {
+	font-weight: bold;
+	background: linear-gradient(to bottom,rgba(0,0,0, 0.1) 0%, rgba(0,0,0, 0.1) 100%),
+	#e2574c;
+}
+
+/* ------ Footer ------ */
+footer {
+	background-color: #242424;
+	height: 250px; 
+}
+
+.footerInfo {
+	float: left;
+}
+
+.footerInfo ul li a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.footerInfo ul li a:hover{
+	color: #b64036;
+}
+
+.copywriteText, .phoneAndEmailText {
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-bottom: 30px;
+}
+
+.addressText {
+	color: #969696;
+}
+
+.socialMediaIcon {
+	height:30px;
+	width:30px;
+}
+.socialMediaList {
+	float: right;
+}
+
+.socialMediaList ul li {
+	height: 20px;
+	margin-bottom:20px;
+}
+
+.socialMediaList ul li img {
+	float: left;
+}
+
+.socialMediaList ul a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.socialMediaList ul a:hover {
+	color: #b64036;
+}
+.socialMediaList ul a:hover i {
+	font-size: 1.4rem;
+}
+
+.socialMediaList ul li p {
+	font-family: Raleway;
+	font-weight: normal;
+}
+
+.socialMediaList ul li i {
+	width: 25px;
+	padding-right: 5px;
+}
+
+@media all and (min-width: 600px) {
+	html {
+		font-size: 16px;
+	}
+}
