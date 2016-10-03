@@ -29,4 +29,5 @@ This project taught me a lot about how to structure semantic HTML in order to ef
 # TODO
 * Add an image of the website (possibly one of each break point view to the README)
 * Add additional comments to style.CSS
-* proof read the README.md as I'm too tired to do it now.
+* proof read the README.md as I'm too tired to do it now
+* fix the description section width for higher resolution screens
