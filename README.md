@@ -4,7 +4,7 @@
 
 # Summary / Purpose
 
-(http://scottfuoco.github.io/aloha/ "Aloha Apparel") is a mockup of a fictional e-commerce website written in HTML5 and CSS3 without the use of any frameworks.
+[Aloha Apparel](http://scottfuoco.github.io/aloha/) is a mockup of a fictional e-commerce website written in HTML5 and CSS3 without the use of any frameworks.
 It can be a useful reference for the following:
 * Positioning containers and elements with CSS floats
 * Displaying containers and elements using display block and inline-block
