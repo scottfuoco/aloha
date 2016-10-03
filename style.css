@@ -569,4 +569,8 @@ address {
 	.banner {
 		background-size: cover, contain, contain;
 	}
+
+	.descriptionSection {
+		width: 600px;
+	}
 }
