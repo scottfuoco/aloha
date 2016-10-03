@@ -14,7 +14,7 @@ It can be a useful reference for the following:
 
 ---
 
-# Technologies used
+# Technologies Used
 * HTML5
 * CSS3
 
