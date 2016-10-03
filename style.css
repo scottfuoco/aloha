@@ -37,10 +37,11 @@ a:hover {
 	color: #b64036;
 }
 
-.clearfix:after {
-	content: '';
-	clear: both;
+.clearfix::before,
+.clearfix::after {
+	content: "";
 	display: table;
+	clear: both;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -56,7 +57,7 @@ h2 {
 }
 .container {
 	padding: 0 2%;
-	margin: auto;
+	margin: 0 auto;
 	max-width: 1240px;
 	width: 100%;
 }
@@ -98,6 +99,7 @@ header {
 
 .hr {
 	border-top: 1px solid #d7d7d7;
+	margin-bottom: 60px;
 }
 
 /* ------ Banner Section ------ */
@@ -105,8 +107,9 @@ header {
 	background: linear-gradient(to bottom,rgba(0,0,0, 0.25) 0%, rgba(0,0,0, 0.25) 100%),
 				url("./assets/images/banner-girl.png") no-repeat center 126px,
 				url("./assets/images/flower-bkgd.jpg") repeat-x center top;
-	background-size: cover, contain, contain;
+	background-size: cover, contain, cover;
 	height: 620px;
+	min-width: 610px; /* The extra 10px on the width is to compensate for a scroll bar text 							uncenterig issue */
 	color: #FFFFFF;
 }
 
@@ -115,6 +118,7 @@ header {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+	text-shadow: 2px 2px 5px rgba(128, 128, 128, .9)
 }
 
 .banner h2{
@@ -132,11 +136,8 @@ header {
 .descriptionSection {
 	height: 200px;
 	text-align: center;
-}
-
-.descriptionSection>div {
 	width: 600px;
-	margin: 0 auto;
+
 }
 
 .descriptionSection h2 {
@@ -144,13 +145,20 @@ header {
 }
 
 .descriptionSection p {
+    width: 400px;
 	line-height: 2rem;
+	margin: 0 auto;
+	
 }
 
 /* ------ Product Section ------ */
 .productSection {
-	height: 500px;
+	position: relative;
+	min-height: 400px;
+	min-width: 610px;
+	padding-bottom: 30px;
 }
+
 .productSection .productImage {
 	width: 240px;
 	margin: 0 auto;
@@ -158,7 +166,7 @@ header {
 }
 .productSection .productList { 
 	float: left;
-	width: 25%;
+	width: 100%;
 }
 
 .productSection h2 {
@@ -190,17 +198,18 @@ header {
 
 /* ------ Updates Section ------ */
 .updatesSection {
-	background: linear-gradient(to bottom,rgba(0,0,0, 0.25) 0%, rgba(0,0,0, 0.25) 100%),
+	background: linear-gradient(to bottom,rgba(0,0,0, 0) 0%, rgba(0,0,0, 0) 100%),
 				url("./assets/images/wave-bkgd.jpg") no-repeat center bottom;
 	color: #FFFFFF;
+	min-width: 600px;
 	text-align: center;
 	height: 300px;
 	position: relative;
+	padding-top: 30px;
 	margin-bottom: 10px;
 }
 
 .updatesSectionContainer {
-	width: 600px;
 	margin: 0 auto;
 	position: relative;
 	top: 50%;
@@ -219,6 +228,7 @@ header {
 
 .updatesSectionTextContainer {
 	font-weight: bold;
+	text-shadow: 2px 2px 5px rgba(128, 128, 128, .9)
 }
 
 .updatesSectionContainer h2 {
@@ -228,6 +238,7 @@ header {
 .updatesSectionContainer p {
 	line-height: 2rem;
 	padding-bottom: 30px;
+	min-width: 400px;
 }
 
 .subscribeSubmitTextInputContainer{
@@ -277,20 +288,36 @@ header {
 /* ------ Footer ------ */
 footer {
 	background-color: #242424;
-	height: 250px; 
+	position: relative;
+	font-weight: bold;
+	height: 400px;
+	min-width: 600px;
+
+}
+
+.footerContainer {
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .footerInfo {
-	float: left;
+	line-height: 1.5rem;
+	font-size: 1.25rem;
 }
 
 .footerInfo ul li a {
-	text-decoration: none;
 	color: #FFFFFF;
 }
 
 .footerInfo ul li a:hover{
 	color: #b64036;
+}
+
+.footerInfo ul li a:active{
+	color: #23666F;
 }
 
 .copywriteText, .phoneAndEmailText {
@@ -307,17 +334,22 @@ footer {
 	height:30px;
 	width:30px;
 }
+
+
 .socialMediaList {
-	float: right;
+	font-size: 1.25rem;
+}
+
+
+.socialMediaList ul li span {
+	visibility: hidden;
 }
 
 .socialMediaList ul li {
 	height: 20px;
+	width: 30px;
 	margin-bottom:20px;
-}
-
-.socialMediaList ul li img {
-	float: left;
+	display: inline-block;
 }
 
 .socialMediaList ul a {
@@ -327,8 +359,9 @@ footer {
 .socialMediaList ul a:hover {
 	color: #b64036;
 }
-.socialMediaList ul a:hover i {
-	font-size: 1.4rem;
+
+.socialMediaList ul a:active{
+	color: #23666F;
 }
 
 .socialMediaList ul li p {
@@ -341,8 +374,63 @@ footer {
 	padding-right: 5px;
 }
 
+address {
+
+	padding-bottom: 30px;
+}
+
 @media all and (min-width: 600px) {
 	html {
 		font-size: 16px;
+	}
+
+	.socialMediaList ul li {
+		width: inherit;
+	}
+
+	.productSection .productList { 
+		width: 50%;
+	}
+
+	.footerInfo {
+		float: left;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.socialMediaList {
+		float: right;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.socialMediaList ul li img {
+		float: left;
+	}
+
+	.socialMediaList ul li span {
+		visibility: visible;
+	}
+	.socialMediaList ul li {
+		display: block;
+	}
+
+	.footerContainer {
+		text-align: left;
+	}
+
+	.socialMediaList ul a:hover i {
+		font-size: 1.6rem;
+	}
+}
+
+@media all and (min-width: 1240px) {
+	.productSection .productList { 
+		width: 25%;
+	}
+	.banner {
+		background-size: cover, contain, contain;
 	}
 }
